@@ -22,7 +22,7 @@ cmake_minimum_required(VERSION 2.8)
 project(metacall_embedding_server_example)
 
 # Include MetaCall library as a dependency
-set(METACALL_VERSION 0.2.2)
+set(METACALL_VERSION 0.2.3)
 
 include(ExternalProject)
 
