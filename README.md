@@ -39,5 +39,5 @@ Building and running with Docker:
 
 ```bash
 docker build --build-arg DISABLE_CACHE=`date +%s` -t metacall/embedding-server-example .
-docker run --rm -p 8124:8124 -it metacall/embedding-server-example embedding_server_example
+docker run --rm -p 8124:8124 -e LOADER_LIBRARY_PATH="/usr/local/lib" -e LOADER_SCRIPT_PATH="/root/embedding-server-example" -it metacall/embedding-server-example embedding_server_example
 ```

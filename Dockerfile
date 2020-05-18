@@ -53,10 +53,5 @@ RUN git clone https://github.com/metacall/embedding-server-example.git \
 	&& cmake .. \
 	&& cmake --build . --target install
 
-# Run the executable
-RUN export LOADER_LIBRARY_PATH="/usr/local/lib" \
-	&& export LOADER_SCRIPT_PATH="`pwd`/embedding-server-example" \
-	&& embedding_server_example
-
 # Expose server port
 EXPOSE 8124
