@@ -41,3 +41,8 @@ Building and running with Docker:
 docker build --build-arg DISABLE_CACHE=`date +%s` -t metacall/embedding-server-example .
 docker run --rm -p 8124:8124 -e LOADER_LIBRARY_PATH="/usr/local/lib" -e LOADER_SCRIPT_PATH="/root/embedding-server-example" -it metacall/embedding-server-example embedding_server_example
 ```
+
+Testing if it works:
+```bash
+curl localhost:8124
+```
